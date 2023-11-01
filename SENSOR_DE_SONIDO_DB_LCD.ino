@@ -1,13 +1,13 @@
 const int PinSensor = A0; // Pino Análogico de Entrada 0
 const int PinDigital = 0;
-// int Estado = 0;
+/*Estados predeterminados de las variables*/
 int ValorSensor = 0;
 int valorMayor = 0;
 float sensado = 0;
 int dB = 0;
 int cont = 0;
 
-#include <LiquidCrystal_I2C.h>
+#include <LiquidCrystal_I2C.h>  //Libreria para pantalla I2C con protocolo de comunicacion I2C
 LiquidCrystal_I2C lcd(0x27, 16, 2);   // Inicializa la interfaz I2C del LCD 16x2
 
 void setup() {
